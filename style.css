@@ -1,0 +1,55 @@
+.drag-and-drop {
+  cursor: move;
+  position: absolute;
+  z-index: 1000;
+}
+
+.drag {
+  z-index: 1001;
+}
+
+.changed {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0% {
+    border-color: white;
+  }
+
+  50% {
+    border-color: red;
+  }
+
+  100% {
+    border-color: white;
+  }
+}
+
+#red-box {
+  height: 100px;
+  width: 200px;
+  background-color: crimson;
+  border-width: 8px;
+  border-style: solid;
+  border-color: white;
+}
+
+
+#blue-box {
+  height: 100px;
+  width: 200px;
+  background-color: cyan;
+  border-width: 8px;
+  border-style: solid;
+  border-color: white;
+}
+
+#yellow-box {
+  height: 100px;
+  width: 200px;
+  background-color: khaki;
+  border-width: 8px;
+  border-style: solid;
+  border-color: white;
+}
